@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yushan Ventures — Technology Strategy &amp; Scouting Since 2011</title>
+<meta name="description" content="Yushan Ventures is a technology strategy and scouting partner to the world's industrial leaders — Audi, Continental, ABB, ZEISS, Coca-Cola, Aumovio — mapping markets, shaping roadmaps, and finding the partners and technologies to execute, across 25+ countries.">
+<link rel="stylesheet" href="yushan-v2.css">
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+<script src="image-slot.js"></script>
+<script>function logoFail(el){var a=el.getAttribute('alt')||'';var c='lw';if(el.closest('.logo-cell'))c='wm';else if(el.closest('.cs-top'))c='cs-wm';var s=document.createElement('span');s.className=c;s.textContent=a;el.replaceWith(s);}</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/yushan-logo.png" alt="Yushan Ventures"></a>
+    <button class="nav-burger" aria-label="Toggle menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="navlinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="index.html#speaking">Speaking</a>
+      <a href="index.html#news">News</a>
+      <a href="#team">Team</a>
+      <a href="#contact" class="nav-cta">Start a Conversation</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" data-screen-label="Hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Est. 2011 · Germany · USA · Taiwan</span>
+      <h1 class="display">The technology strategists behind the world's <em>industrial leaders</em>.</h1>
+      <p class="lede">For fifteen years, Yushan Ventures has helped Audi, Continental, ABB, ZEISS, Coca-Cola and more set technology strategy — mapping markets, shaping roadmaps, and finding the partners and technologies to execute — and served as venture partner to funds investing over USD 100M in deep tech.</p>
+      <div class="hero-caps">
+        <a href="services.html#scouting">Technology Strategy &amp; Scouting</a>
+        <a href="services.html#investment">Venture &amp; Investment Advisory</a>
+        <a href="services.html#startup-bd">Startup BD &amp; Ecosystem</a>
+      </div>
+      <div class="btns">
+        <a href="case-studies.html" class="btn btn-solid">See our case studies</a>
+        <a href="#now" class="btn btn-outline-green">What we're working on</a>
+      </div>
+      <div class="hero-mark">
+        <svg width="42" height="20" viewBox="0 0 42 20" fill="none"><path d="M1 19 L11 5 L16 11 L23 1 L31 12 L35 8 L41 19" stroke="#437829" stroke-width="1.8" stroke-linejoin="round" fill="none"></path></svg>
+        <span>Named after Yushan 玉山 — Jade Mountain, Taiwan's highest peak</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame" style="height:380px">
+        <image-slot id="hero-photo" src="assets/team-nasa.jpg" shape="rounded" radius="10" placeholder="Drop a hero photo — e.g. Volker on stage, or a scouting / roadshow moment"></image-slot>
+      </div>
+      <div class="badge" style="left:auto;right:-18px;top:26px;bottom:auto">
+        <div class="b-label">Strategy &amp; scouting network</div>
+        <div class="b-text">25+ countries · Asia, Europe, the Americas &amp; Israel</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<svg class="ridge" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L0 52 L140 22 L260 44 L420 8 L560 38 L720 2 L880 34 L1040 14 L1200 42 L1330 24 L1440 48 L1440 70 Z" fill="#0b3318" opacity=".16"></path><path d="M0 70 L0 60 L160 34 L300 52 L480 20 L640 46 L800 12 L960 42 L1120 26 L1280 50 L1440 32 L1440 70 Z" fill="#0b3318"></path></svg>
+<div class="section-green on-green stat-band" data-screen-label="Stats">
+  <div class="wrap stat-grid">
+    <div><div class="stat-num">15</div><div class="stat-label">Years of technology strategy &amp; scouting</div></div>
+    <div><div class="stat-num">25<span>+</span></div><div class="stat-label">Countries in our global network</div></div>
+    <div><div class="stat-num">$100<span>M+</span></div><div class="stat-label">Funds served as venture partner</div></div>
+    <div><div class="stat-num">2</div><div class="stat-label">Scouted startups acquired — by Apple &amp; Qualcomm</div></div>
+  </div>
+</div>
+
+<section data-screen-label="Client logo wall">
+  <div class="wrap">
+    <div class="section-head" style="text-align:center;margin:0 auto 40px">
+      <span class="eyebrow" style="justify-content:center">Trusted by</span>
+      <h2 class="title">Strategy and scouting for global leaders.</h2>
+      <p class="lede" style="margin:0 auto">From automotive OEMs to industrial giants and consumer brands — we set technology strategy, run innovation workshops, and scout the suppliers and partners that get them to market.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="logo-wall">
+      <div class="logo-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Volkswagen_logo_2019.svg" alt="Volkswagen Group" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/Audi_logo.png" alt="Audi" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/continental-logo.png" alt="Continental" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/ABB_logo.png" alt="ABB Robotics" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Siemens_AG_logo.svg" alt="Siemens" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/Zeiss_logo.jpeg" alt="ZEISS" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Coca-Cola_logo.svg" alt="Coca-Cola" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/scg-logo.webp" alt="Siam Cement Group" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/heidelberg-logo.webp" alt="HeidelbergCement" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/liteon-logo.png" alt="Lite-On" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/IBM_logo.svg" alt="IBM" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/Sensetime_logo.png" alt="SenseTime" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/aumovio-logo.png" alt="Aumovio" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/apec-logo.jpg" alt="APEC" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><span class="wm">Uno Minda</span></div>
+      <div class="logo-cell"><span class="wm">AcBel</span></div>
+    </div>
+    <p style="font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center;margin-top:18px">Also engaged: GSMA · Foxconn · Trans Pacific Technology Fund · NiSource · MobileMonday Taipei</p>
+  </div>
+</section>
+
+<section id="footprint" data-screen-label="Global footprint">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Global footprint</span>
+      <h2 class="title">Where we've worked.</h2>
+      <p class="lede">Fifteen years of scouting, strategy, and investment engagements — on the ground across the innovation hotspots of Asia, Europe, and the Americas, and connected to governments in 10+ APEC economies.</p>
+    </div>
+    <div class="map-wrap" id="footprint-map">
+      <div class="map-inner">
+        <svg class="map-svg" role="img" aria-label="World map of Yushan Ventures engagement markets"></svg>
+      </div>
+      <div class="map-tip"><div class="mt-country"></div><div class="mt-list"></div></div>
+    </div>
+    <div class="map-legend">
+      <div class="lg"><span class="lg-swatch"></span>Country where we've scouted, advised, or invested</div>
+      <div class="lg"><span class="lg-dot"></span>Engagement hub — hover for the work</div>
+    </div>
+  </div>
+</section>
+
+<section id="now" class="section-white" data-screen-label="Active engagements">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Now</span>
+      <h2 class="title">What we're working on.</h2>
+      <p class="lede">Active engagements on both sides of the Pacific — scouting, market research, and business development.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card accent">
+        <span class="card-tag"><span class="dot live"></span>Active · Technology Strategy</span>
+        <h3>Aumovio — Automotive MicroLED Strategy</h3>
+        <p>A board-level strategy paper on the automotive MicroLED ecosystem — market and value-chain mapping, low-risk product entry points, make-vs-buy-vs-partner analysis, and a risk-adjusted roadmap for R&amp;D and CAPEX decisions.</p>
+        <div class="card-logo"><img src="assets/aumovio-logo.png" alt="Aumovio" onerror="logoFail(this)"></div>
+      </div>
+      <div class="card accent">
+        <span class="card-tag"><span class="dot live"></span>Active · Business Development</span>
+        <h3>Carbonix Materials — US Entry</h3>
+        <p>Business development for the advanced-materials startup: US market-entry strategy and warm customer introductions across our corporate network.</p>
+        <div class="card-logo"><img src="assets/carbonix-logo.png" alt="Carbonix Materials" onerror="logoFail(this)"></div>
+      </div>
+      <div class="card">
+        <span class="card-tag done"><span class="dot"></span>2025 · Delivered</span>
+        <h3>Best-Cost-Country Scouting — India</h3>
+        <p>RFQ development and best-cost-country supplier scouting in India — from crafting the RFQ through supplier evaluation and selection.</p>
+        <div class="card-logo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Volkswagen_logo_2019.svg" alt="Volkswagen Group" onerror="logoFail(this)"><span class="cl-note">IAV · Volkswagen Group</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="What we do">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What we do</span>
+      <h2 class="title">Strategy, scouting, investing — one global network.</h2>
+    </div>
+    <div class="card-grid">
+      <a class="card" href="services.html#scouting" style="color:inherit">
+        <div class="card-photo"><image-slot id="practice-scout" shape="rect" placeholder="Photo: scouting / factory floor / lab visit"></image-slot></div>
+        <span class="card-tag">01 · Strategy &amp; Scouting</span>
+        <h3>Technology Strategy &amp; Scouting</h3>
+        <p>We map markets, shape technology roadmaps, and run make-vs-buy-vs-partner analysis — then find and qualify the technologies, startups, and suppliers to execute, across 25+ countries.</p>
+        <span class="card-client" style="color:var(--green);font-weight:600">Explore →</span>
+      </a>
+      <a class="card" href="services.html#investment" style="color:inherit">
+        <div class="card-photo"><image-slot id="practice-invest" shape="rect" placeholder="Photo: roadshow / boardroom / pitch"></image-slot></div>
+        <span class="card-tag">02 · Investment</span>
+        <h3>Venture &amp; Investment Advisory</h3>
+        <p>Venture partner to deep-tech funds — Trans Pacific Technology Fund and HeidelbergCement's Foundamental — plus corporate roadshows, due diligence, and deal sourcing for strategic investors.</p>
+        <span class="card-client" style="color:var(--green);font-weight:600">Explore →</span>
+      </a>
+      <a class="card" href="services.html#startup-bd" style="color:inherit">
+        <div class="card-photo"><image-slot id="practice-bd" shape="rect" placeholder="Photo: client meeting / accelerator / workshop"></image-slot></div>
+        <span class="card-tag">03 · Growth</span>
+        <h3>Startup BD &amp; Ecosystem</h3>
+        <p>Market entry for technology startups, accelerator design, and ecosystem programs — from introducing Startup Weekend to Taiwan to co-building the APEC O2O accelerator worldwide.</p>
+        <span class="card-client" style="color:var(--green);font-weight:600">Explore →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<svg class="ridge" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L0 60 L160 34 L300 52 L480 20 L640 46 L800 12 L960 42 L1120 26 L1280 50 L1440 32 L1440 70 Z" fill="#0b3318"></path></svg>
+<section class="section-green on-green quote-band" style="padding-top:56px" data-screen-label="Quote">
+  <div class="wrap">
+    <blockquote>"The rise of internet economies will continue to challenge traditional business models, labor requirements and revenue streams."</blockquote>
+    <cite>Volker Heistermann — APEC O2O Summit, Lima, Peru</cite>
+  </div>
+</section>
+<svg class="ridge ridge-flip" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L0 60 L160 34 L300 52 L480 20 L640 46 L800 12 L960 42 L1120 26 L1280 50 L1440 32 L1440 70 Z" fill="#0b3318"></path></svg>
+
+<section id="speaking" data-screen-label="Speaking & events">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Speaking &amp; thought leadership</span>
+      <h2 class="title">On stage, on the panel, on the jury.</h2>
+      <p class="lede">From APEC summits to CES bootcamps, our founder is a regular keynote speaker, moderator, and startup-competition judge across Asia, Europe, and the Americas.</p>
+    </div>
+    <div class="talks">
+      <div class="talk"><div class="talk-year">2026</div><div class="talk-main"><h4>Tech Scouting in the Age of AI Agents</h4><div class="talk-host">Startup Island TAIWAN — Silicon Valley Hub · with Deeli AI</div></div><span class="talk-role">Panel</span></div>
+      <div class="talk"><div class="talk-year">2026</div><div class="talk-main"><h4>French Tech Taiwan Fireside Chat</h4><div class="talk-host">Business France × InFocus · Taipei</div></div><span class="talk-role">Fireside</span></div>
+      <div class="talk"><div class="talk-year">2025</div><div class="talk-main"><h4>Taiwan Landing &amp; Launch</h4><div class="talk-host">Taipei Computer Association (TCA)</div></div><span class="talk-role">Keynote</span></div>
+      <div class="talk"><div class="talk-year">2025</div><div class="talk-main"><h4>CES Global Accelerator Bootcamp</h4><div class="talk-host">Taiwan Tech Arena (TTA) · Taipei</div></div><span class="talk-role">Keynote</span></div>
+      <div class="talk"><div class="talk-year">2025</div><div class="talk-main"><h4>DATE Summit — “From Connection to Collaboration”</h4><div class="talk-host">Business Today · Taipei</div></div><span class="talk-role">Speaker</span></div>
+      <div class="talk"><div class="talk-year">2025</div><div class="talk-main"><h4>Canada–Taiwan CEO Forum &amp; Roundtable</h4><div class="talk-host">Canadian Trade Office · Taipei</div></div><span class="talk-role">Speaker</span></div>
+      <div class="talk"><div class="talk-year">2024</div><div class="talk-main"><h4>Mobileheroes Global Award Ceremony</h4><div class="talk-host">ITRI · Taipei</div></div><span class="talk-role">Fireside</span></div>
+      <div class="talk"><div class="talk-year">2024</div><div class="talk-main"><h4>IC Taiwan Forum @ COMPUTEX InnoVEX</h4><div class="talk-host">Taiwan Tech Arena · Taipei</div></div><span class="talk-role">Moderator</span></div>
+      <div class="talk"><div class="talk-year">2024</div><div class="talk-main"><h4>Technology × Sustainability: Marine Innovation Forum</h4><div class="talk-host">ITRI · Ocean Affairs Council</div></div><span class="talk-role">Panel</span></div>
+      <div class="talk"><div class="talk-year">2024</div><div class="talk-main"><h4>Semiconductor Forum</h4><div class="talk-host">European Chamber of Commerce Taiwan (ECCT)</div></div><span class="talk-role">Co-chair</span></div>
+      <div class="talk"><div class="talk-year">2016</div><div class="talk-main"><h4>APEC O2O Summit</h4><div class="talk-host">APEC · Lima, Peru</div></div><span class="talk-role">Speaker</span></div>
+      <div class="talk"><div class="talk-year">2015</div><div class="talk-main"><h4>“The Rise of Asia's Innovation Machines”</h4><div class="talk-host">GSMA · 10-city global roadshow</div></div><span class="talk-role">Roadshow</span></div>
+    </div>
+    <div style="font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:34px 0 14px">Also on stage &amp; on the jury</div>
+    <div class="stage-chips">
+      <span>Obama's Global Entrepreneurship Summit</span><span>Mobile World Congress</span><span>Startup Weekend</span><span>MobileMonday Taipei</span><span>Audi Innovation Award</span>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Selected case studies">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Selected work</span>
+      <h2 class="title">A few of the engagements behind the logos.</h2>
+    </div>
+    <div class="cs-grid">
+      <a class="cs-card" href="case-studies.html#audi" style="color:inherit">
+        <div class="cs-top"><img src="assets/Audi_logo.png" alt="Audi" onerror="logoFail(this)"><span class="cs-badge">Scouting · Roadshow</span></div>
+        <div class="cs-region">Japan · Korea · China · Israel · USA · Taiwan</div>
+        <h3>Multi-market scouting &amp; Brain-Wave project</h3>
+        <p>Six-country technology scouting for Audi, including the Brain-Wave Scouting project to identify wireless brain-wave sensing for the vehicle — plus executive roadshows.</p>
+      </a>
+      <a class="cs-card" href="case-studies.html#abb" style="color:inherit">
+        <div class="cs-top"><img src="assets/ABB_logo.png" alt="ABB" onerror="logoFail(this)"><span class="cs-badge">Scouting · Roadshow</span></div>
+        <div class="cs-region">Japan · 2018</div>
+        <h3>Vision tech for the YuMi robot</h3>
+        <p>Scouted visualization and machine-vision technologies in Japan for ABB Robotics' YuMi collaborative robot, and ran the executive roadshow.</p>
+      </a>
+      <a class="cs-card" href="case-studies.html#scg" style="color:inherit">
+        <div class="cs-top"><img src="assets/scg-logo.webp" alt="Siam Cement Group" onerror="logoFail(this)"><span class="cs-badge">Scouting</span></div>
+        <div class="cs-region">Thailand</div>
+        <h3>High-temperature kiln sensors</h3>
+        <p>Scouted high-sensitivity, high-temperature sensor technologies for Siam Cement Group's kiln tunnels.</p>
+      </a>
+      <a class="cs-card" href="case-studies.html#tptf" style="color:inherit">
+        <div class="cs-top"><span class="cs-wm">Trans Pacific<br>Technology Fund</span><span class="cs-badge">Venture Partner</span></div>
+        <div class="cs-region">USD 100M · Cross-Pacific</div>
+        <h3>Venture partner to a $100M fund</h3>
+        <p>Served as venture partner sourcing and evaluating deep-tech deals for the Trans Pacific Technology Fund (USD 100M) across the Pacific.</p>
+      </a>
+    </div>
+    <div class="btns"><a href="case-studies.html" class="btn btn-outline-green">All case studies</a></div>
+  </div>
+</section>
+
+<section class="section-white" data-screen-label="The arc">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The story</span>
+      <h2 class="title">One thread, fifteen years.</h2>
+      <p class="lede">Yushan built ecosystems, scouted technology for the world's largest industrial companies, advised venture funds, founded an accelerator — and the founder is back at the helm.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">2011</div>
+        <h3>Founded in Taipei — and lit the spark</h3>
+        <p>Yushan Ventures established to bridge global innovation and Asia's ecosystems. Introduced Startup Weekend to Taiwan and ran the MobileMonday Taipei chapter.</p>
+        <div class="logo-row"><img src="assets/startup-weekend-logo.png" alt="Startup Weekend" onerror="logoFail(this)"><span class="lw">MobileMonday Taipei</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2012–2018</div>
+        <h3>Co-built the APEC O2O Accelerator</h3>
+        <p>Conceived and co-built the APEC O2O accelerator with Taiwan's government — running startup programs around the world, from Nanjing to Lima.</p>
+        <div class="logo-row"><span class="lw">APEC</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2015</div>
+        <h3>Volkswagen Group, Audi &amp; Coca-Cola</h3>
+        <p>Became technology scouting partner to the Volkswagen Group and Audi; ran a China scouting engagement for Coca-Cola; toured 10 cities with GSMA on "The Rise of Asia's Innovation Machines".</p>
+        <div class="logo-row"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Volkswagen_logo_2019.svg" alt="Volkswagen Group" onerror="logoFail(this)"><img src="assets/Audi_logo.png" alt="Audi" onerror="logoFail(this)"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Coca-Cola_logo.svg" alt="Coca-Cola" onerror="logoFail(this)"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/GSMA_logo_%28red%29.svg" alt="GSMA" onerror="logoFail(this)"></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2018–2020</div>
+        <h3>Venture partner &amp; ABB / Siam Cement scouting</h3>
+        <p>Venture partner to HeidelbergCement's Foundamental fund; scouted vision tech in Japan for ABB's YuMi robot and high-temperature sensors for Siam Cement. Founded Mosaic Venture Lab, powered by Audi AG and Taiwan's MoEA.</p>
+        <div class="logo-row"><img src="assets/heidelberg-logo.webp" alt="HeidelbergCement" onerror="logoFail(this)"><img src="assets/ABB_logo.png" alt="ABB" onerror="logoFail(this)"><img src="assets/scg-logo.webp" alt="Siam Cement Group" onerror="logoFail(this)"><img src="assets/mosaic-logo.png" alt="Mosaic Venture Lab" onerror="logoFail(this)"></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2026</div>
+        <h3>Yushan rebooted</h3>
+        <p>With Mosaic running independently, the founder returns to Yushan full-time — scouting, investment advisory, and startup growth under one roof again.</p>
+        <div class="logo-row"><img src="assets/aumovio-logo.png" alt="Aumovio" onerror="logoFail(this)"></div>
+      </div>
+    </div>
+    <div class="btns"><a href="case-studies.html" class="btn btn-outline-green">Full track record</a></div>
+  </div>
+</section>
+
+<section id="news" class="section-white" data-screen-label="News & press">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">News &amp; press</span>
+      <h2 class="title">In the press, and in the room.</h2>
+      <p class="lede">Fifteen years of building ventures and ecosystems — a selection of features, recognitions, and milestones.</p>
+    </div>
+    <div class="news-grid">
+      <div class="news-card"><div class="news-meta"><span class="news-date">2025</span><span class="news-src">APAC Entrepreneur</span></div><h3>Named among the Most Innovative Entrepreneurs from Taiwan</h3><p>Featured profile in APAC Entrepreneur, spotlighting Yushan's cross-border technology scouting and venture work.</p></div>
+      <div class="news-card"><div class="news-meta"><span class="news-date">2024</span><span class="news-src">Google Labs</span></div><h3>Selected as a Project Astra trusted tester</h3><p>Invited into Google's early trusted-tester program for its next-generation multimodal AI assistant.</p></div>
+      <div class="news-card"><div class="news-meta"><span class="news-date">2018</span><span class="news-src">Milestone</span></div><h3>Founded Mosaic Venture Lab — powered by Audi AG &amp; Taiwan's MoEA</h3><p>Launched Yushan's deep-tech accelerator and hands-on VC in Taipei, backed by Audi AG and the Ministry of Economic Affairs.</p></div>
+      <div class="news-card"><div class="news-meta"><span class="news-date">2011</span><span class="news-src">Milestone</span></div><h3>Brought Startup Weekend &amp; MobileMonday to Taiwan</h3><p>Lit the spark for Taiwan's early startup community — introducing Startup Weekend and running the MobileMonday Taipei chapter.</p></div>
+    </div>
+    <p style="font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:center;margin-top:24px">More coverage &amp; speaking clips available on request</p>
+  </div>
+</section>
+
+<section class="section-tint" data-screen-label="Mosaic Venture Lab">
+  <div class="wrap">
+    <div class="mosaic-band">
+      <div class="logo-tile"><img src="assets/mosaic-logo.png" alt="Mosaic Venture Lab"></div>
+      <div>
+        <span class="eyebrow">Our spin-off</span>
+        <h2 class="title">We founded Mosaic Venture Lab.</h2>
+        <p class="lede" style="margin-bottom:8px">Created in 2018 as Yushan's deep-tech accelerator and hands-on VC in Taipei — powered by Audi AG and Taiwan's Ministry of Economic Affairs — Mosaic Venture Lab grew into an integrated startup-support ecosystem with 20+ professionals. Today it operates independently.</p>
+        <div class="btns"><a href="https://www.mosaicventurelab.com" target="_blank" rel="noopener" class="btn btn-outline-green">Visit Mosaic Venture Lab</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="section-white" data-screen-label="Team">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Team</span>
+      <h2 class="title">The people behind the strategy.</h2>
+      <p class="lede">Over 110 years of combined experience across automotive, deep tech, and cross-border venture — advising boards, running the research, and doing the deals from Germany, the USA, and Taiwan.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <image-slot id="photo-vh" src="assets/VH.jpeg" shape="circle" style="width:110px;height:110px" placeholder="VH photo"></image-slot>
+        <div>
+          <h3 style="margin-bottom:2px">Volker Heistermann</h3>
+          <div class="team-role">Founder &amp; Managing Director · San Francisco</div>
+          <p>Founded Yushan in Taipei in 2011 after 15 years in Silicon Valley — Google, AT&amp;T, and investment bank Rutberg &amp; Co. Venture partner to the Trans Pacific Technology Fund and Foundamental; founded Mosaic Venture Lab; judge at Obama's Global Entrepreneurship Summit.</p>
+          <div class="team-links">
+            <a href="https://www.linkedin.com/in/volkerheistermann/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:vh@yushanventures.com">vh@yushanventures.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <image-slot id="photo-vk" src="assets/VK.jpeg" shape="circle" style="width:110px;height:110px" placeholder="VK photo"></image-slot>
+        <div>
+          <h3 style="margin-bottom:2px">Dr.-Ing. Volker Kaese</h3>
+          <div class="team-role">Managing Director · Germany</div>
+          <p>Automotive engineering leader with deep OEM experience. Leads technology research, supplier programs, and innovation consulting for European automotive clients.</p>
+          <div class="team-links">
+            <a href="https://www.linkedin.com/in/volkerkaese/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:vk@yushanventures.com">vk@yushanventures.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team-mini-grid">
+      <div class="team-mini">
+        <image-slot id="photo-me" src="assets/melanie-edwards.jpg" shape="circle" placeholder="Photo"></image-slot>
+        <h3>Melanie Edwards</h3>
+        <div class="team-role">Advisor · Stanford University</div>
+        <p>Brings Stanford research and Silicon Valley networks to Yushan's strategy and market-research engagements.</p>
+        <div class="team-links"><a href="https://www.linkedin.com/in/melanie--edwards" target="_blank" rel="noopener">LinkedIn</a></div>
+      </div>
+      <div class="team-mini">
+        <image-slot id="photo-bb" src="assets/bruce-bateman.jpg" shape="circle" placeholder="Photo"></image-slot>
+        <h3>Bruce Bateman</h3>
+        <div class="team-role">Partner · Semiconductor Research Lead</div>
+        <p>A serial entrepreneur and IoT specialist who has spent his career in technology companies including Dell and PictureTel, Bruce leads Yushan's semiconductor research and scouting with decades of cross-border operating experience across Asia's technology and manufacturing sectors.</p>
+        <div class="team-links"><a href="https://www.linkedin.com/in/brucewbateman/" target="_blank" rel="noopener">LinkedIn</a></div>
+      </div>
+      <div class="team-mini">
+        <image-slot id="photo-kh" src="assets/kyle-hu.jpg" shape="circle" placeholder="Photo"></image-slot>
+        <h3>Kyle Hu</h3>
+        <div class="team-role">Research Manager · Display Technology</div>
+        <p>Leads display-technology research for Yushan's strategy and market-research engagements, working across the Mosaic deep-tech network in Taiwan.</p>
+        <div class="team-links"><a href="https://www.linkedin.com/in/kyle-hu-874456227/" target="_blank" rel="noopener">LinkedIn</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="ridge" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L0 60 L160 34 L300 52 L480 20 L640 46 L800 12 L960 42 L1120 26 L1280 50 L1440 32 L1440 70 Z" fill="#0b3318"></path></svg>
+<section id="contact" class="section-green on-green" style="padding-top:56px" data-screen-label="Contact CTA">
+  <div class="wrap" style="text-align:center;max-width:760px">
+    <span class="eyebrow" style="justify-content:center">Contact</span>
+    <h2 class="title">Let's find what you're looking for.</h2>
+    <p class="lede" style="margin:0 auto">Scouting a technology, sourcing deals, or entering a new market — start with a conversation.</p>
+    <div class="btns" style="justify-content:center">
+      <a href="mailto:vh@yushanventures.com" class="btn btn-white">Email Volker</a>
+      <a href="tel:+14152856800" class="btn btn-outline">+1-415-285-6800</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="assets/yushan-logo.png" alt="Yushan Ventures"></div>
+        <p>A technology strategy and scouting partner to the world's industrial leaders — strategy &amp; market intelligence, technology and supplier scouting, and venture advisory across Asia, Europe, and the Americas.</p>
+      </div>
+      <div>
+        <h3>San Francisco Office</h3>
+        <p>San Francisco, California<br>United States<br><a href="tel:+14152856800">+1-415-285-6800</a></p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p><a href="services.html">Services</a><br><a href="case-studies.html">Case Studies</a><br><a href="https://www.mosaicventurelab.com" target="_blank" rel="noopener">Mosaic Venture Lab</a><br><a href="https://www.linkedin.com/company/yushan-ventures-inc/" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Yushan Ventures, Inc. All rights reserved.</span>
+      <span>Germany · USA · Taiwan</span>
+    </div>
+  </div>
+</footer>
+
+<script src="yushan-map.js"></script>
+</body>
+</html>

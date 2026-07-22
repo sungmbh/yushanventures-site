@@ -270,3 +270,9 @@ h1.display{font-size:clamp(34px,8.5vw,44px)}
 /* RESPONSIVE — added components */
 @media (max-width:940px){.news-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:620px){.talk{grid-template-columns:46px 1fr;gap:12px 16px}.talk-role{grid-column:2;justify-self:start;margin-top:2px}.news-grid{grid-template-columns:1fr}}
+/* MOBILE HERO FIX — no right-edge overflow, photo shown at true proportions */
+@media (max-width:940px){
+.hero-photo .frame{height:auto!important;aspect-ratio:3/2}
+.hero-photo .frame image-slot{display:block;width:100%;height:100%}
+.hero .badge{position:static!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;max-width:none!important;margin:14px 0 0!important;box-shadow:none!important}
+}

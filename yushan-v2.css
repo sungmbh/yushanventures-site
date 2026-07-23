@@ -44,6 +44,11 @@ section{padding:84px 0}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
 .hero-mark{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:30px;display:flex;align-items:center;gap:12px}
 .hero-mark svg{flex:none}
+.geo-strip{display:flex;align-items:center;gap:14px 26px;flex-wrap:wrap;margin-top:38px;padding-top:26px;border-top:1px solid var(--rule)}
+.geo-strip-label{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.geo-items{display:flex;gap:12px;flex-wrap:wrap}
+.geo-item{display:inline-flex;align-items:center;gap:8px;font-family:var(--serif);font-size:19px;font-weight:600;color:var(--ink);background:var(--green-tint);border:1px solid var(--rule);border-radius:100px;padding:7px 18px}
+.geo-item svg{flex:none;color:var(--green-bright)}
 .hero-photo{position:relative}
 .hero-photo .frame{height:520px;position:relative}
 .hero-photo .badge{position:absolute;left:-18px;bottom:34px;background:var(--green-deep);color:#fff;padding:16px 22px;border-radius:6px;max-width:280px;box-shadow:0 18px 40px rgba(11,51,24,.35)}
@@ -170,7 +175,7 @@ section{padding:84px 0}
 .cs-card.on-deep .cs-top{border-color:rgba(255,255,255,.2)}
 .cs-card.on-deep .cs-badge{background:rgba(255,255,255,.14);color:#cfe7bb}
 /* TEAM MINI */
-.team-mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin-top:20px}
+.team-mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:680px;margin-top:20px}
 .team-mini{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:24px}
 .team-mini image-slot{width:72px;height:72px;margin-bottom:14px;display:block}
 .team-mini h3{font-size:17px;margin-bottom:2px}
@@ -259,7 +264,7 @@ h1.display{font-size:clamp(34px,8.5vw,44px)}
 .stage-chips{display:flex;flex-wrap:wrap;gap:10px 12px}
 .stage-chips span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border:1px solid var(--rule);border-radius:100px;padding:7px 14px;background:var(--white)}
 /* NEWS */
-.news-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .news-card{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:24px 24px 26px;display:flex;flex-direction:column;gap:11px;transition:box-shadow .25s,transform .25s}
 .news-card:hover{box-shadow:0 14px 34px rgba(11,51,24,.12);transform:translateY(-3px)}
 .news-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
@@ -267,12 +272,33 @@ h1.display{font-size:clamp(34px,8.5vw,44px)}
 .news-src{font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--green-mid);background:var(--green-tint);border-radius:100px;padding:5px 11px}
 .news-card h3{font-size:18px;line-height:1.25;margin:0}
 .news-card p{font-size:13.5px;color:var(--muted);line-height:1.6}
+/* PRESS CLIPPINGS + COVERAGE LINKS */
+.clip-label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+.clip-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px}
+.clip{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:8px;overflow:hidden;background:#efece3;box-shadow:0 8px 22px rgba(11,51,24,.08);transition:transform .25s,box-shadow .25s}
+.clip:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(11,51,24,.16)}
+.clip img{width:100%;height:300px;object-fit:cover;object-position:top center;display:block}
+.clip .clip-cap{padding:12px 14px;background:var(--white);border-top:1px solid var(--rule)}
+.clip-title{font-family:var(--serif);font-weight:600;font-size:14px;color:var(--ink);line-height:1.28;display:block}
+.clip-meta{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--green-mid);margin-top:5px;display:block}
+a.news-card{color:inherit;text-decoration:none}
+a.news-card h3{color:var(--ink)}
+.news-arrow{margin-top:auto;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--green-mid);transition:color .2s}
+a.news-card:hover .news-arrow{color:var(--green)}
+.speaking-visual{margin:38px 0 0;border:1px solid var(--rule);border-radius:11px;overflow:hidden;background:#0b1410}
+.speaking-visual img{width:100%;height:auto;display:block}
+.speaking-visual .sv-cap{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);padding:12px 18px;background:var(--white)}
+@media (max-width:940px){.clip-gallery{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.clip-gallery{grid-template-columns:1fr}.clip img{height:340px}}
 /* RESPONSIVE — added components */
 @media (max-width:940px){.news-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:620px){.talk{grid-template-columns:46px 1fr;gap:12px 16px}.talk-role{grid-column:2;justify-self:start;margin-top:2px}.news-grid{grid-template-columns:1fr}}
-/* MOBILE HERO FIX — no right-edge overflow, photo shown at true proportions */
+/* MOBILE — fixed-height photo boxes + image-slot aspect-ratio compute a 600px intrinsic width that blows out 1fr grid tracks (root cause of right-edge overflow + scroll stick). Let photos derive height from width instead, and allow tracks to shrink. */
 @media (max-width:940px){
 .hero-photo .frame{height:auto!important;aspect-ratio:3/2}
 .hero-photo .frame image-slot{display:block;width:100%;height:100%}
 .hero .badge{position:static!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;max-width:none!important;margin:14px 0 0!important;box-shadow:none!important}
+.split .photo,.case .photo{height:auto!important;aspect-ratio:3/2}
+.hero-grid>*,.split>*,.case>*,.mosaic-band>*,.team-grid>*,.card-grid>*,.team-mini-grid>*{min-width:0}
+.checklist li{overflow-wrap:break-word}
 }

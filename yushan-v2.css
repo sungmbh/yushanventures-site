@@ -148,9 +148,9 @@ section{padding:84px 0}
 .mosaic-band .logo-tile{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:28px;display:flex;align-items:center;justify-content:center}
 .mosaic-band img{width:150px}
 /* LOGO WALL */
-.logo-wall{display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid var(--rule);border-top:1px solid var(--rule);background:var(--white)}
+.logo-wall{display:grid;grid-template-columns:repeat(6,1fr);border-left:1px solid var(--rule);border-top:1px solid var(--rule);background:var(--white)}
 .logo-cell{border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);min-height:116px;display:flex;align-items:center;justify-content:center;padding:22px 18px;background:var(--white)}
-.logo-cell img{max-height:38px;max-width:128px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.66;transition:filter .3s,opacity .3s}
+.logo-cell img{max-height:38px;max-width:min(128px,100%);width:auto;object-fit:contain;filter:grayscale(1);opacity:.66;transition:filter .3s,opacity .3s}
 .logo-cell:hover img{filter:grayscale(0);opacity:1}
 .logo-cell .wm{font-family:var(--serif);font-weight:600;font-size:19px;line-height:1.15;color:#8b978c;letter-spacing:-.01em;text-align:center;transition:color .3s}
 .logo-cell:hover .wm{color:var(--ink)}

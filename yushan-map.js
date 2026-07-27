@@ -5,10 +5,10 @@
     "United States of America": {label:"United States", city:[-122.4,37.8], items:["San Francisco office","Audi × NASA & Lockheed Martin demo day","Carbonix Materials — US market entry","Akonia → Apple · Wikitude → Qualcomm","GSMA China Innovation Roadshow"]},
     "Germany": {city:[8.68,50.11], items:["ZEISS Microoptics — automotive readiness","Aumovio — MicroLED strategy","HeidelbergCement / Foundamental — venture partner","GSMA China Innovation Roadshow"]},
     "Japan": {city:[139.7,35.68], items:["Audi — technology scouting","ABB Robotics — YuMi vision tech"]},
-    "South Korea": {label:"South Korea", city:[126.98,37.57], items:["Audi — technology scouting","StradVision — Series A → KOSDAQ listing","GSMA China Innovation Roadshow"]},
+    "South Korea": {label:"South Korea", city:[126.98,37.57], items:["Audi — technology scouting","StradVision — Series A → KOSDAQ listing","GSMA Open Day — 5G & IoT (Seoul)","GSMA China Innovation Roadshow"]},
     "China": {city:[121.47,31.23], items:["Audi — technology scouting","Coca-Cola — China scouting","Lite-On — radar & lidar","Siemens China — innovation program","Wikitude — social-media management (→ Qualcomm)"]},
     "Israel": {city:[34.78,32.08], items:["Audi — technology scouting","Lite-On — radar & lidar"]},
-    "Thailand": {city:[100.5,13.75], items:["Siam Cement Group — high-temp kiln sensors","GSMA China Innovation Roadshow"]},
+    "Thailand": {city:[100.5,13.75], items:["Siam Cement Group — high-temp kiln sensors","Chanwanich — biometric scouting (face & fingerprint)","Startup Thailand workshop — Bangkok","GSMA China Innovation Roadshow"]},
     "Malaysia": {city:[101.69,3.14], items:["IBM — Southeast Asia scouting","GSMA China Innovation Roadshow"]},
     "India": {city:[77.21,28.61], items:["IAV (VW Group) — Best-Cost-Country scouting RFQ","Uno Minda × AcBel — strategic license agreement"]},
     "Peru": {city:[-77.04,-12.05], items:["APEC O2O Summit — Lima"]},
@@ -16,7 +16,10 @@
     "Vietnam": {city:[105.85,21.03], items:["APEC O2O accelerator program"]}
   };
   // Singapore has no polygon at this resolution — rendered as a marker only.
-  var EXTRA_MARKERS = { "Singapore": {city:[103.82,1.35], items:["Southeast Asia business development"]} };
+  var EXTRA_MARKERS = {
+    "Singapore": {city:[103.82,1.35], items:["GSMA Open Day — Future of Mobility","Southeast Asia business development"]},
+    "Hong Kong": {city:[114.17,22.32], items:["GSMA Open Day — Next Frontier of IoT","Coller Institute of Venture — speaker"]}
+  };
 
   var root = document.getElementById("footprint-map");
   if(!root) return;
@@ -53,7 +56,7 @@
     var proj = d3.geoNaturalEarth1().fitSize([W,H], framed);
     var path = d3.geoPath(proj);
 
-    svg.append("g").selectAll("path").data(countries).enter().append("path")
+    svg.append("g").selectAll("path").data(framed.features).enter().append("path")
       .attr("d", path)
       .attr("class", function(f){ return "country" + (MARKETS[f.properties.name] ? " active" : ""); })
       .on("mousemove", function(evt,f){ var m=MARKETS[f.properties.name]; if(m) showTip(f.properties.name, m, evt); })

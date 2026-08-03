@@ -1,9 +1,9 @@
 (function(){
   // Markets where Yushan has scouted, advised, or invested — each sourced from a real engagement.
   var MARKETS = {
-    "Taiwan": {city:[121.5,25.05], items:["HQ & founding (2011)","VW Group Innovation — startup scouting","APEC O2O accelerator","Startup Weekend · MobileMonday","GSMA China Innovation Roadshow","AcBel × Uno Minda — license agreement"]},
+    "Taiwan": {city:[121.5,25.05], items:["HQ & founding (2011)","VW Group Innovation — startup scouting","Audi — 4D printing scouting project","APEC O2O accelerator","Startup Weekend · MobileMonday","GSMA China Innovation Roadshow","AcBel × Uno Minda — license agreement"]},
     "United States of America": {label:"United States", city:[-122.4,37.8], items:["San Francisco office","Audi × NASA & Lockheed Martin demo day","Carbonix Materials — US market entry","Akonia → Apple · Wikitude → Qualcomm","GSMA China Innovation Roadshow"]},
-    "Germany": {city:[8.68,50.11], items:["ZEISS Microoptics — automotive readiness","Aumovio — MicroLED strategy","HeidelbergCement / Foundamental — venture partner","GSMA China Innovation Roadshow"]},
+    "Germany": {city:[8.68,50.11], items:["ZEISS Microoptics — automotive readiness","European automotive Tier 1 — MicroLED strategy","HeidelbergCement / Foundamental — venture partner","GSMA China Innovation Roadshow"]},
     "Japan": {city:[139.7,35.68], items:["Audi — technology scouting","ABB Robotics — YuMi vision tech"]},
     "South Korea": {label:"South Korea", city:[126.98,37.57], items:["Audi — technology scouting","StradVision — Series A roadshow → 2026 Korea listing","GSMA Open Day — 5G & IoT (Seoul)","GSMA China Innovation Roadshow"]},
     "China": {city:[121.47,31.23], items:["Audi — technology scouting","Coca-Cola — China scouting","SenseTime — scouted for Audi → IPO","Lite-On — radar & lidar","Siemens China — innovation program","Wikitude — social-media management (→ Qualcomm)"]},
@@ -50,7 +50,7 @@
   var W=1120, H=560;
   var svg = d3.select(root).select(".map-svg").attr("viewBox","0 0 "+W+" "+H);
 
-  d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json").then(function(topo){
+  fetch("assets/countries-110m.json").then(function(r){ return r.json(); }).then(function(topo){
     var countries = topojson.feature(topo, topo.objects.countries).features;
     var framed = {type:"FeatureCollection", features: countries.filter(function(f){return f.properties.name!=="Antarctica";})};
     var proj = d3.geoNaturalEarth1().fitSize([W,H], framed);

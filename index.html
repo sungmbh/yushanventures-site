@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yushan Ventures — Technology Strategy &amp; Scouting Since 2011</title>
-<meta name="description" content="Yushan Ventures is a technology strategy and scouting firm for industrial companies — Audi, Continental, ABB, ZEISS, Coca-Cola, Aumovio — mapping markets, shaping roadmaps, and finding the partners and technologies to execute, across 15 countries.">
+<title>Yushan Ventures — Deep-Tech Strategy &amp; Scouting Since 2011</title>
+<meta name="description" content="Yushan Ventures answers make-or-buy-or-partner questions for industrial companies — in compound semiconductors, AI and robotics, optics and sensing. Clients include Audi, Continental, ABB and ZEISS, across 15 countries.">
 <link rel="stylesheet" href="yushan-v2.css">
-<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+<script src="assets/d3-array.min.js"></script>
+<script src="assets/d3-selection.min.js"></script>
+<script src="assets/d3-geo.min.js"></script>
+<script src="assets/topojson-client.min.js"></script>
 <script src="image-slot.js"></script>
+<script src="yushan-diagrams.js"></script>
 <script>function logoFail(el){var a=el.getAttribute('alt')||'';var c='lw';if(el.closest('.logo-cell'))c='wm';else if(el.closest('.cs-top'))c='cs-wm';var s=document.createElement('span');s.className=c;s.textContent=a;el.replaceWith(s);}</script>
 </head>
 <body id="top">
@@ -27,18 +30,19 @@
   </div>
 </nav>
 
-<div class="anchor-rail"><div class="anchor-rail-inner"><a href="#clients">Clients</a><a href="#footprint">Where we work</a><a href="#now">Current work</a><a href="#practices">What we do</a><a href="#speaking">Speaking</a><a href="#work">Selected work</a><a href="#story">Our story</a><a href="#news">Press</a><a href="#team">Team</a></div></div>
+<div class="anchor-rail"><div class="anchor-rail-inner"><a href="#clients">Clients</a><a href="#footprint">Footprint</a><a href="#now">Now</a><a href="#practices">What we do</a><a href="#domains">Domains</a><a href="#method">How we work</a><a href="#speaking">Speaking</a><a href="#work">Work</a><a href="#story">Story</a><a href="#news">Press</a><a href="#team">Team</a></div></div>
 
 <header class="hero" data-screen-label="Hero">
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow">Est. 2011 · Germany · USA · Taiwan</span>
-      <h1 class="display">Technology strategy and scouting for <em>industrial companies</em>.</h1>
-      <p class="lede">Since 2011 we have mapped markets and technology roadmaps for Audi, Continental, ABB, ZEISS and Coca-Cola, then found the startups and suppliers to execute them. Companies we scouted or helped raise have since been bought by Apple and Qualcomm, and listed in Korea and China.</p>
+      <h1 class="display">Deep-tech strategy and scouting for <em>industrial companies</em>.</h1>
+      <p class="lede">We answer make-or-buy-or-partner questions in compound semiconductors, AI and robotics, optics and sensing, and advanced materials — for Audi, Continental, ABB and ZEISS. We map the value chain, name and rank the partners, and show our evidence. Then we find the companies on the ground, in 15 countries.</p>
       <div class="hero-caps">
-        <a href="services.html#scouting">Technology Strategy &amp; Scouting</a>
-        <a href="services.html#investment">Venture &amp; Investment Advisory</a>
-        <a href="services.html#startup-bd">Startup BD &amp; Ecosystem</a>
+        <a href="#domains">Semiconductors &amp; Displays</a>
+        <a href="#domains">AI &amp; Robotics</a>
+        <a href="#domains">Optics &amp; Sensing</a>
+        <a href="#domains">Advanced Materials</a>
       </div>
       <div class="btns">
         <a href="case-studies.html" class="btn btn-solid">See our case studies</a>
@@ -89,20 +93,20 @@
   </div>
   <div class="wrap">
     <div class="logo-wall">
-      <div class="logo-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Volkswagen_logo_2019.svg" alt="Volkswagen Group" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/vw-logo.svg" alt="Volkswagen Group" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/Audi_logo.png" alt="Audi" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/continental-logo.png" alt="Continental" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/ABB_logo.png" alt="ABB Robotics" onerror="logoFail(this)"></div>
-      <div class="logo-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Siemens_AG_logo.svg" alt="Siemens" onerror="logoFail(this)"></div>
-      <div class="logo-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Google_2015_logo.svg" alt="Google" onerror="logoFail(this)"></div>
-      <div class="logo-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft_logo_(2012).svg" alt="Microsoft" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/siemens-logo.svg" alt="Siemens" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/google-logo.svg" alt="Google" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/microsoft-logo.svg" alt="Microsoft" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/Zeiss_logo.jpeg" alt="ZEISS" onerror="logoFail(this)"></div>
-      <div class="logo-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Coca-Cola_logo.svg" alt="Coca-Cola" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/cocacola-logo.svg" alt="Coca-Cola" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/scg-logo.webp" alt="Siam Cement Group" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/chanwanich-logo.jpg" alt="Chanwanich" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/heidelberg-logo.webp" alt="HeidelbergCement" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/liteon-logo.png" alt="Lite-On" onerror="logoFail(this)"></div>
-      <div class="logo-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/IBM_logo.svg" alt="IBM" onerror="logoFail(this)"></div>
+      <div class="logo-cell"><img src="assets/ibm-logo.svg" alt="IBM" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/aumovio-logo.png" alt="Aumovio" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/apec-logo.jpg" alt="APEC" onerror="logoFail(this)"></div>
       <div class="logo-cell"><img src="assets/uno-minda-logo.avif" alt="Uno Minda" onerror="logoFail(this)"></div>
@@ -142,9 +146,9 @@
     <div class="card-grid">
       <div class="card accent">
         <span class="card-tag"><span class="dot live"></span>Active · Technology Strategy</span>
-        <h3>Aumovio — Automotive MicroLED Strategy</h3>
-        <p>A board-level strategy paper on the automotive MicroLED ecosystem — market and value-chain mapping, low-risk product entry points, make-vs-buy-vs-partner analysis, and a risk-adjusted roadmap for R&amp;D and CAPEX decisions.</p>
-        <div class="card-logo"><img src="assets/aumovio-logo.png" alt="Aumovio" onerror="logoFail(this)"></div>
+        <h3>Automotive MicroLED strategy — European Tier 1</h3>
+        <p>A board-level strategy paper on the automotive MicroLED ecosystem: compound-semiconductor value-chain mapping from GaN epitaxy through mass transfer to driver ASICs, a 34-company partner scorecard, and a risk-adjusted roadmap for R&amp;D and CAPEX decisions.</p>
+        <div class="card-logo"><span class="cl-note">Client under NDA</span></div>
       </div>
       <div class="card accent">
         <span class="card-tag"><span class="dot live"></span>Active · Business Development</span>
@@ -156,7 +160,7 @@
         <span class="card-tag done"><span class="dot"></span>2025 · Delivered</span>
         <h3>Best-Cost-Country Scouting — India</h3>
         <p>RFQ development and best-cost-country supplier scouting in India — from crafting the RFQ through supplier evaluation and selection.</p>
-        <div class="card-logo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Volkswagen_logo_2019.svg" alt="Volkswagen Group" onerror="logoFail(this)"><span class="cl-note">IAV · Volkswagen Group</span></div>
+        <div class="card-logo"><img src="assets/vw-logo.svg" alt="Volkswagen Group" onerror="logoFail(this)"><span class="cl-note">IAV · Volkswagen Group</span></div>
       </div>
     </div>
   </div>
@@ -173,7 +177,7 @@
         <div class="card-photo"><image-slot id="practice-scout" src="assets/meeting-room.jpg" shape="rect" placeholder="Photo: scouting / factory floor / lab visit"></image-slot></div>
         <span class="card-tag">01 · Strategy &amp; Scouting</span>
         <h3>Technology Strategy &amp; Scouting</h3>
-        <p>We map markets, shape technology roadmaps, and run make-vs-buy-vs-partner analysis — then find and qualify the technologies, startups, and suppliers to execute, across 15 countries.</p>
+        <p>We map value chains, shape technology roadmaps, and run make-vs-buy-vs-partner analysis down to the component and process level — then find and qualify the technologies, startups, and suppliers to execute, across 15 countries.</p>
         <span class="card-client" style="color:var(--green);font-weight:600">Explore →</span>
       </a>
       <a class="card" href="services.html#investment" style="color:inherit">
@@ -191,6 +195,88 @@
         <span class="card-client" style="color:var(--green);font-weight:600">Explore →</span>
       </a>
     </div>
+  </div>
+</section>
+
+<section id="domains" class="section-white" data-screen-label="Technology domains">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Domains</span>
+      <h2 class="title">Where we go deep.</h2>
+      <p class="lede">Four technology areas we know at the level where the cost and the risk actually sit &mdash; the process step, the component, the qualification gate. Not industry verticals.</p>
+    </div>
+    <div class="domain-grid">
+      <div class="domain">
+        <div class="domain-photo"><image-slot id="dom-semi" src="assets/dom-semiconductors.jpg" fit="cover" credit="Silicon wafer, thin-film iridescence · Wikimedia Commons · CC BY-SA 4.0" credit-href="https://commons.wikimedia.org/wiki/File:Multicrystalline_silicon_wafer_with_thin_film_iridescence.jpg" placeholder="Semiconductors — drop a GaN wafer, MicroLED die under microscope, or epitaxy cleanroom photo"></image-slot></div>
+        <span class="domain-n">01 &middot; Semiconductors &amp; displays</span>
+        <h3>Compound semiconductor supply chains</h3>
+        <p>The stack from wafer to pixel &mdash; epitaxy, chip, transfer, backplane, driver &mdash; and which step decides whether a programme is affordable. On one engagement we mapped and ranked 34 companies across a single value chain for a client's board.</p>
+        <div class="tags"><span>GaN &amp; GaN-on-Si epitaxy</span><span>MicroLED &amp; mass transfer</span><span>Driver ICs &amp; AEC-grade ASICs</span><span>Backplanes: LTPS, passive matrix, &micro;CMOS</span><span>Quantum-dot colour conversion</span><span>Inspection, metrology &amp; yield</span><span>Packaging &amp; test equipment</span></div>
+      </div>
+      <div class="domain">
+        <div class="domain-photo"><image-slot id="dom-ai" src="assets/dom-robotics.jpg" fit="cover" credit="Industrial robot integration · Wikimedia Commons · CC BY-SA 4.0" credit-href="https://commons.wikimedia.org/wiki/File:Automatix_Kuka_robot_being_integrated.agr.jpg" placeholder="AI &amp; robotics — drop a robot arm with vision system, or a machine-vision inspection cell"></image-slot></div>
+        <span class="domain-n">02 &middot; AI &amp; robotics</span>
+        <h3>Machine intelligence in moving machines</h3>
+        <p>We screened Japan's AI and robotics ecosystem for ABB Robotics &mdash; edge inference silicon, perception, reinforcement learning for motion control &mdash; and wrote a full technical dossier on every company that survived the screen.</p>
+        <div class="tags"><span>Edge inference silicon</span><span>Perception &amp; sensor fusion</span><span>Reinforcement learning for motion</span><span>Machine vision &amp; 3D metrology</span><span>Cloud robotics &amp; fleet tooling</span><span>Biometrics &amp; facial recognition</span></div>
+      </div>
+      <div class="domain">
+        <div class="domain-photo"><image-slot id="dom-optics" src="assets/dom-optics.jpg" fit="cover" credit="Laser optics bench · Idaho National Laboratory · CC BY 2.0" credit-href="https://commons.wikimedia.org/wiki/File:Laser_Optics_-_Idaho_National_Laboratory.jpg" placeholder="Optics &amp; sensing — drop a diffractive optic, lens array, or HUD light-engine photo"></image-slot></div>
+        <span class="domain-n">03 &middot; Optics, photonics &amp; sensing</span>
+        <h3>Light engines and hard-environment sensing</h3>
+        <p>Microoptics, diffractive and holographic elements, and the light engines behind head-up displays &mdash; plus sensing that has to survive an industrial environment. We took ZEISS Microoptics through automotive series-production readiness and scouted kiln-tunnel sensors for Siam Cement.</p>
+        <div class="tags"><span>Diffractive &amp; holographic optics</span><span>HUD and panoramic-HUD light engines</span><span>Radar &amp; lidar</span><span>High-temperature industrial sensing</span><span>Silicon photonics</span><span>Wireless bio-signal sensing</span></div>
+      </div>
+      <div class="domain">
+        <div class="domain-photo"><image-slot id="dom-materials" src="assets/dom-materials.jpg" fit="cover" credit="Additive manufacturing · Wikimedia Commons · public domain" credit-href="https://commons.wikimedia.org/wiki/File:Building_the_future_with_innovative_manufacturing_(7335470).jpg" placeholder="Materials — drop a 3D-printed auxetic lattice or powder-bed-fusion part photo"></image-slot></div>
+        <span class="domain-n">04 &middot; Advanced materials &amp; manufacturing</span>
+        <h3>Materials that do something, and the base that builds them</h3>
+        <p>Smart materials, additive manufacturing and the suppliers who can make them at price. We ran Audi's 4D printing scouting project — printed structures that change shape with no mechanism — from a bare research field to four costed concepts on a gated investment path.</p>
+        <div class="tags"><span>Additive &amp; 4D printing</span><span>Auxetic structures &amp; metamaterials</span><span>Shape-memory polymers &amp; textiles</span><span>Advanced &amp; carbon materials</span><span>Interior surfaces &amp; shy tech</span><span>Exterior lighting &amp; adaptive driving beam</span><span>Best-cost-country supply</span><span>Construction &amp; materials tech</span></div>
+      </div>
+    </div>
+    <p class="footnote">These are named domains, not a menu. When a question falls outside them we say so, and point you to someone better placed.</p>
+  </div>
+</section>
+
+<section id="method" data-screen-label="How we work">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How we work</span>
+      <h2 class="title">Evidence you can take to a board.</h2>
+      <p class="lede">Industrial clients do not need another confident deck. They need to know which numbers survive scrutiny and which ones do not &mdash; so we label them.</p>
+    </div>
+    <div class="principles">
+      <div class="principle">
+        <span class="prov">&#10003; VERIFIED &nbsp;&middot;&nbsp; &#9670; ESTIMATE &nbsp;&middot;&nbsp; SUPPLIER-STATED</span>
+        <h3>Every figure carries its provenance.</h3>
+        <p>A chart in our reports is badged on its face: verified against a primary source, our own triangulation, or a vendor's claim recorded but unconfirmed. A client should never mistake our estimate for a fact. Where no honest figure exists we show a placeholder and say so.</p>
+      </div>
+      <div class="principle">
+        <h3>Primary research, on the record.</h3>
+        <p>Named expert interviews, supplier calls and trade-floor intelligence. A principal display engineer answering six written questions. A driver-IC house telling us on a call that the architecture everyone assumes is uneconomic at automotive screen size. Not a literature review with a logo on it.</p>
+      </div>
+      <div class="principle">
+        <h3>Models you can edit.</h3>
+        <p>Our partner scorecards ship as working spreadsheets: weighted criteria, weights in an editable row, ranking re-sorts when you change them. You get the model and the evidence tab behind every score &mdash; one row of sourced fact per company &mdash; not just our conclusion.</p>
+      </div>
+      <div class="principle">
+        <h3>A range when the answer is a range.</h3>
+        <p>The biggest uncertainty in a business case is shown as a band, not a number. On one recent question the analyst view and the leading supplier's view were twofold apart. We published both, and named which decisions were safe inside either.</p>
+      </div>
+      <div class="principle">
+        <h3>We run the room, not just the report.</h3>
+        <p>Two-day strategy workshops at the client's site, in their language &mdash; SWOT built live with the leadership team, an anonymous employee survey fed back into the room, then minutes and roadmap written up as a formal report within the week.</p>
+      </div>
+      <div class="principle">
+        <h3>Culture is a gating requirement, like the spec.</h3>
+        <p>Before a German optics team entered a Korean Tier-1 programme we wrote the field guide alongside the technical one: how decisions actually get made, ISO 26262 and ASIL obligations, RACI for series production, ramp-up and spare-parts planning. Both gate the award.</p>
+      </div>
+    </div>
+    <figure class="figure" style="margin-top:44px">
+      <dg-scorecard></dg-scorecard>
+      <figcaption><b>A partner-suitability scorecard from a live engagement.</b> Thirty-four companies across one value chain, eight weighted criteria, and a stance gate that caps a direct rival at the bottom tier however strong its technology &mdash; because the risk being managed is IP leakage, not capability. The client edits the weights and the ranking re-sorts.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -259,6 +345,12 @@
       <h2 class="title">Selected work.</h2>
     </div>
     <div class="cs-grid">
+      <a class="cs-card" href="case-studies.html#4dp-deep" style="color:inherit">
+        <div class="cs-top"><img src="assets/Audi_logo.png" alt="Audi" onerror="logoFail(this)"><span class="cs-badge">Deep-Tech Scouting</span></div>
+        <div class="cs-region">Taiwan · Europe · US · Asia · 2019</div>
+        <h3>4D printing — research field to four funded options</h3>
+        <p>Turned a technology with 90 patents worldwide into four costed concepts on a three-gate investment path, with a dedicated technical team in Taiwan and an eleven-professor expert network.</p>
+      </a>
       <a class="cs-card" href="case-studies.html#audi" style="color:inherit">
         <div class="cs-top"><img src="assets/Audi_logo.png" alt="Audi" onerror="logoFail(this)"><span class="cs-badge">Scouting · Roadshow</span></div>
         <div class="cs-region">Japan · Korea · China · Israel · USA · Taiwan</div>
@@ -311,20 +403,19 @@
       <div class="tl-item">
         <div class="tl-year">2015</div>
         <h3>Volkswagen Group, Audi &amp; Coca-Cola</h3>
-        <p>Became technology scouting partner to the Volkswagen Group and Audi; ran a China scouting engagement for Coca-Cola; toured 10 cities with GSMA on "The Rise of Asia's Innovation Machines".</p>
-        <div class="logo-row"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Volkswagen_logo_2019.svg" alt="Volkswagen Group" onerror="logoFail(this)"><img src="assets/Audi_logo.png" alt="Audi" onerror="logoFail(this)"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Coca-Cola_logo.svg" alt="Coca-Cola" onerror="logoFail(this)"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/GSMA_logo_%28red%29.svg" alt="GSMA" onerror="logoFail(this)"></div>
+        <p>Became technology scouting partner to the Volkswagen Group and Audi — and introduced ProLogium, the Taiwanese solid-state lithium-ceramic battery maker, to Audi. Ran a China scouting engagement for Coca-Cola; toured 10 cities with GSMA on "The Rise of Asia's Innovation Machines".</p>
+        <div class="logo-row"><img src="assets/vw-logo.svg" alt="Volkswagen Group" onerror="logoFail(this)"><img src="assets/Audi_logo.png" alt="Audi" onerror="logoFail(this)"><img src="assets/cocacola-logo.svg" alt="Coca-Cola" onerror="logoFail(this)"><img src="assets/gsma-logo.svg" alt="GSMA" onerror="logoFail(this)"></div>
       </div>
       <div class="tl-item">
         <div class="tl-year">2018–2020</div>
         <h3>Venture partner &amp; ABB / Siam Cement scouting</h3>
         <p>Venture partner to HeidelbergCement's Foundamental fund; scouted vision tech in Japan for ABB's YuMi robot and high-temperature sensors for Siam Cement. Founded Mosaic Venture Lab, powered by Audi AG and Taiwan's MoEA.</p>
-        <div class="logo-row"><img src="assets/heidelberg-logo.webp" alt="HeidelbergCement" onerror="logoFail(this)"><img src="assets/ABB_logo.png" alt="ABB" onerror="logoFail(this)"><img src="assets/scg-logo.webp" alt="Siam Cement Group" onerror="logoFail(this)"><img src="assets/mosaic-logo.png" alt="Mosaic Venture Lab" onerror="logoFail(this)"><img src="assets/moea-logo.png" alt="Ministry of Economic Affairs, Taiwan" onerror="logoFail(this)"></div>
+        <div class="logo-row"><img src="assets/foundamental-logo.png" alt="Foundamental" onerror="logoFail(this)"><img src="assets/heidelberg-logo.webp" alt="HeidelbergCement" onerror="logoFail(this)"><img src="assets/ABB_logo.png" alt="ABB" onerror="logoFail(this)"><img src="assets/scg-logo.webp" alt="Siam Cement Group" onerror="logoFail(this)"><img src="assets/mosaic-logo.png" alt="Mosaic Venture Lab" onerror="logoFail(this)"><img src="assets/moea-logo.png" alt="Ministry of Economic Affairs, Taiwan" onerror="logoFail(this)"></div>
       </div>
       <div class="tl-item">
         <div class="tl-year">2026</div>
         <h3>Yushan rebooted</h3>
         <p>With Mosaic running independently, the founder returns to Yushan full-time — scouting, investment advisory, and startup growth under one roof again.</p>
-        <div class="logo-row"><img src="assets/aumovio-logo.png" alt="Aumovio" onerror="logoFail(this)"></div>
       </div>
     </div>
     <div class="btns"><a href="case-studies.html" class="btn btn-outline-green">Full track record</a></div>
@@ -336,10 +427,24 @@
     <div class="section-head">
       <span class="eyebrow">News &amp; press</span>
       <h2 class="title">Selected press.</h2>
-      <p class="lede">From a 1996 hometown-paper profile in Germany to the Wall Street Journal, TechCrunch and Taiwan's 數位時代 — three decades of building ventures, in the press and on the record.</p>
+      <p class="lede">Interviewed as a cover story by Taiwan's trade authority, received at the Presidential Office, and on the record in the Wall Street Journal, TechCrunch and 數位時代 — three decades of building ventures, in the press.</p>
     </div>
-    <div class="clip-label">Selected clippings</div>
+    <div class="clip-label">Recent coverage</div>
+    <div class="news-grid recent">
+      <a class="news-card" href="assets/press-taitra-a.jpg" target="_blank" rel="noopener"><div class="news-meta"><span class="news-date">Feb 2024</span><span class="news-src">經貿透視 Trade Insight · TAITRA</span></div><h3>Cover story: Taiwanese startups open a new chapter with Europe's majors</h3><p>A four-page interview in the trade authority's flagship magazine (No. 637) on brokering the PlayNitride × Continental MicroLED cockpit debut at CES, and why Taiwanese suppliers should approach Tier‑1s rather than the carmakers.</p><span class="news-arrow">Read the feature ↗</span></a>
+      <a class="news-card" href="assets/press-lai-handshake.jpg" target="_blank" rel="noopener"><div class="news-meta"><span class="news-date">Jul 2024</span><span class="news-src">Presidential Office, Taipei</span></div><h3>Received by President Lai Ching-te</h3><p>Part of an international technology and investment delegation welcomed at the Presidential Office — recognition of fifteen years spent connecting European industry to Taiwan's semiconductor and deep-tech base.</p><span class="news-arrow">View photo ↗</span></a>
+      <a class="news-card" href="https://www.ecct.com.tw/event/ecct-special-lunch-how-european-mobility-leaders-are-partnering-with-taiwanese-startups/" target="_blank" rel="noopener"><div class="news-meta"><span class="news-date">Oct 2025</span><span class="news-src">European Chamber of Commerce Taiwan</span></div><h3>How European mobility leaders partner with Taiwanese startups</h3><p>Panel at the Regent Taipei alongside the Group CIO of Volkswagen Group Taiwan and the GM of automotive OEM sales at Robert Bosch Taiwan — on why multinationals still under-use Taiwan's deep-tech ecosystem.</p><span class="news-arrow">Event ↗</span></a>
+      <a class="news-card" href="assets/press-taitra-c.jpg" target="_blank" rel="noopener"><div class="news-meta"><span class="news-date">2024</span><span class="news-src">工商時報 Commercial Times</span></div><h3>A top-three global auto-parts supplier lands in Taiwan</h3><p>On Continental building a next-generation supply chain in Taiwan through a venture-lab alliance — the Tier-1 relationship behind the CES MicroLED debut.</p><span class="news-arrow">Read ↗</span></a>
+    </div>
+    <div class="press-photos">
+      <div class="case-photo"><img src="assets/press-lai-handshake.jpg" alt="Volker Heistermann shaking hands with President Lai Ching-te at the Presidential Office, Taipei"><span class="case-cap">With President Lai Ching-te · Presidential Office, Taipei · 2024</span></div>
+      <div class="case-photo"><img src="assets/press-lai-group.jpg" alt="Delegation group photo with President Lai Ching-te at the Presidential Office, Taipei"><span class="case-cap">Delegation reception · Presidential Office, Taipei · 2024</span></div>
+    </div>
+    <div class="clip-label" style="margin-top:38px">Selected clippings</div>
     <div class="clip-gallery">
+      <a class="clip" href="assets/press-taitra-cover.jpg" target="_blank" rel="noopener"><img src="assets/press-taitra-cover.jpg" alt="經貿透視 Trade Insight No.637 cover, February 2024"><span class="clip-cap"><span class="clip-title">“歐洲引領轉型浪潮” · cover</span><span class="clip-meta">經貿透視 Trade Insight · TAITRA · 2024</span></span></a>
+      <a class="clip" href="assets/press-taitra-a.jpg" target="_blank" rel="noopener"><img src="assets/press-taitra-a.jpg" alt="Trade Insight cover story page 78 — Taiwanese startups and Europe's majors"><span class="clip-cap"><span class="clip-title">“攜手歐洲大廠 臺灣新創開新局”</span><span class="clip-meta">經貿透視 · 封面故事 · 2024</span></span></a>
+      <a class="clip" href="assets/press-taitra-b.jpg" target="_blank" rel="noopener"><img src="assets/press-taitra-b.jpg" alt="Trade Insight cover story page 79 — interview portrait"><span class="clip-cap"><span class="clip-title">“有雷度才有機會呀！”</span><span class="clip-meta">經貿透視 · interview · 2024</span></span></a>
       <a class="clip" href="assets/press-nw-1996-lippe.jpg" target="_blank" rel="noopener"><img src="assets/press-nw-1996-lippe.jpg" alt="Neue Westfälische 1996 — profile of Volker Heistermann"><span class="clip-cap"><span class="clip-title">“Lars Windhorst für Lippe”</span><span class="clip-meta">Neue Westfälische · 1996</span></span></a>
       <a class="clip" href="assets/press-nw-1996-buero.jpg" target="_blank" rel="noopener"><img src="assets/press-nw-1996-buero.jpg" alt="Neue Westfälische 1996 — Ein Büro im Studentenwohnheim"><span class="clip-cap"><span class="clip-title">“Ein Büro im Studentenwohnheim”</span><span class="clip-meta">Neue Westfälische · 1996</span></span></a>
       <a class="clip" href="assets/press-biznext.jpg" target="_blank" rel="noopener"><img src="assets/press-biznext.jpg" alt="Business Next 數位時代 — Startup Labs feature"><span class="clip-cap"><span class="clip-title">“Startup Labs · 串聯全球創意”</span><span class="clip-meta">數位時代 Business Next · 2013</span></span></a>

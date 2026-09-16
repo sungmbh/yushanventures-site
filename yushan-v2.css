@@ -296,6 +296,9 @@ section{padding:84px 0}
 .logo-wall{display:grid;grid-template-columns:repeat(6,1fr);border-left:1px solid var(--rule);border-top:1px solid var(--rule);background:var(--white)}
 .logo-cell{border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);min-height:116px;display:flex;align-items:center;justify-content:center;padding:22px 18px;background:var(--white)}
 .logo-cell img{max-height:38px;max-width:min(128px,100%);width:auto;object-fit:contain;filter:grayscale(1);opacity:.66;transition:filter .3s,opacity .3s}
+/* Near-square marks cap out at 38px wide and read as blobs beside 102px
+   wordmarks. Give them vertical room so optical weight matches the row. */
+.logo-cell img.sq{max-height:58px}
 .logo-cell:hover img{filter:grayscale(0);opacity:1}
 .logo-cell .wm{font-family:var(--serif);font-weight:600;font-size:19px;line-height:1.15;color:#8b978c;letter-spacing:-.01em;text-align:center;transition:color .3s}
 .logo-cell:hover .wm{color:var(--ink)}
@@ -442,14 +445,14 @@ a.news-card:hover .news-arrow{color:var(--green)}
 @media(max-width:620px){.sv-gallery{grid-template-columns:1fr}}
 /* PRACTICE SUMMARY */
 .practice-summary-wrap{padding:6px 0 26px}
-.practice-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.practice-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .prac-card{display:flex;flex-direction:column;gap:9px;background:var(--white);border:1px solid var(--rule);border-radius:11px;padding:24px 24px 20px;color:inherit;transition:box-shadow .25s,transform .25s,border-color .25s}
 .prac-card:hover{border-color:var(--green-bright);box-shadow:0 3px 12px rgba(11,51,24,.06)}
 .prac-num{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--green-mid)}
 .prac-card h3{font-size:19px;margin:0;line-height:1.24}
 .prac-card p{font-size:14px;color:var(--muted);line-height:1.58;margin:0;flex:1}
 .prac-go{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-top:4px}
-@media(max-width:820px){.practice-summary{grid-template-columns:1fr;gap:14px}}
+@media(max-width:1080px){.practice-summary{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.practice-summary{grid-template-columns:1fr;gap:14px}}
 /* CONTENT LINKS */
 .lede a,.checklist a,.case p a,.card p a{color:var(--green-mid);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;text-decoration-color:rgba(11,51,24,.28);transition:color .2s,text-decoration-color .2s}
 .lede a:hover,.checklist a:hover,.case p a:hover,.card p a:hover{color:var(--green);text-decoration-color:currentColor}
@@ -492,7 +495,6 @@ section[id],header[id]{scroll-margin-top:132px}
 .anchor-rail a.here{color:var(--green);border-bottom-color:var(--green-bright)}
 @media(max-width:940px){.anchor-rail{display:none}section[id],header[id]{scroll-margin-top:80px}}
 /* PROGRESSIVE DISCLOSURE */
-.talks.collapsed .talk:nth-child(n+9){display:none}
 .more-btn{font-family:var(--sans);font-size:14.5px;font-weight:600;color:var(--green);background:none;border:1px solid var(--rule);border-radius:4px;padding:12px 22px;cursor:pointer;margin-top:22px;transition:background .2s,border-color .2s}
 .more-btn:hover{background:var(--green-tint);border-color:var(--green-bright)}
 /* FOOTNOTES — sentence case, not 11px uppercase mono */
@@ -589,3 +591,17 @@ section[id],header[id]{scroll-margin-top:132px}
 footer p a,.site-footer p a{display:inline-block;padding:9px 0}
 .to-top{min-height:44px;display:inline-flex;align-items:center}
 }
+
+.aud-split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0 8px}
+.aud{display:flex;flex-direction:column;gap:7px;padding:20px 20px 18px;border:1px solid rgba(11,51,24,.14);border-radius:10px;background:#fff;color:inherit;text-decoration:none;transition:border-color .18s,transform .18s}
+.aud:hover{border-color:var(--green);transform:translateY(-2px)}
+.aud-k{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--green)}
+.aud h3{font-size:17px;line-height:1.28;margin:0}
+.aud p{font-size:14px;line-height:1.55;color:var(--muted);margin:0}
+.aud-go{font-size:13px;font-weight:600;color:var(--green);margin-top:auto;padding-top:4px}
+.aud-split,.aud{min-width:0}
+/* The hero is still 2-col until 940px, so between 941 and 1200 the audience
+   cards sit inside a narrow track — stack them there, then go back to 2-up
+   once the hero itself is single-column and full width. */
+@media(max-width:1200px) and (min-width:941px){.aud-split{grid-template-columns:1fr}}
+@media(max-width:760px){.aud-split{grid-template-columns:1fr}}

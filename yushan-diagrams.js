@@ -294,6 +294,53 @@ def('dg-scorecard',()=>{
 });
 
 /* ─────────────────────────────────────────────────────────────
+   5. TAIWAN STACK — the island by layer, and what a first-run
+   foreign order actually meets there. Yushan holds relationships
+   at every layer; the variable is capacity to sell, not access.
+   ───────────────────────────────────────────────────────────── */
+def('dg-taiwan-stack',()=>{
+  const rows="<g class=\"lr\" style=\"animation-delay:0.81s\">\n    <rect x=\"40\" y=\"132\" width=\"902\" height=\"35\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.085\"></rect>\n    <text class=\"lnum\" x=\"56\" y=\"155.5\">01</text>\n    <text class=\"lname\" x=\"96\" y=\"155.5\">Wafer foundry</text>\n    <text class=\"ldesc\" x=\"330\" y=\"155\">Logic at advanced nodes; shuttle runs for first silicon</text>\n    <rect x=\"790\" y=\"138.5\" width=\"152\" height=\"26\" rx=\"13\" fill=\"none\" stroke=\"#a8d18a\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\" opacity=\".62\"></rect><text class=\"pl pl-a\" x=\"866\" y=\"157\">ALLOCATED</text>\n  </g><g class=\"lr\" style=\"animation-delay:0.74s\">\n    <rect x=\"40\" y=\"172\" width=\"902\" height=\"35\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.055\"></rect>\n    <text class=\"lnum\" x=\"56\" y=\"195.5\">02</text>\n    <text class=\"lname\" x=\"96\" y=\"195.5\">Design service &amp; IP</text>\n    <text class=\"ldesc\" x=\"330\" y=\"195\">RTL to GDS, tapeout management, IP integration</text>\n    <rect x=\"790\" y=\"178.5\" width=\"152\" height=\"26\" rx=\"13\" fill=\"#7fb069\"></rect><text class=\"pl pl-o\" x=\"866\" y=\"197\">OPEN</text>\n  </g><g class=\"lr\" style=\"animation-delay:0.67s\">\n    <rect x=\"40\" y=\"212\" width=\"902\" height=\"35\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.085\"></rect>\n    <text class=\"lnum\" x=\"56\" y=\"235.5\">03</text>\n    <text class=\"lname\" x=\"96\" y=\"235.5\">Advanced packaging &amp; OSAT</text>\n    <text class=\"ldesc\" x=\"330\" y=\"235\">2.5D and 3D interposer, SiP, final test</text>\n    <rect x=\"790\" y=\"218.5\" width=\"152\" height=\"26\" rx=\"13\" fill=\"none\" stroke=\"#a8d18a\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\" opacity=\".62\"></rect><text class=\"pl pl-a\" x=\"866\" y=\"237\">ALLOCATED</text>\n  </g><g class=\"lr\" style=\"animation-delay:0.60s\">\n    <rect x=\"40\" y=\"252\" width=\"902\" height=\"35\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.055\"></rect>\n    <text class=\"lnum\" x=\"56\" y=\"275.5\">04</text>\n    <text class=\"lname\" x=\"96\" y=\"275.5\">IC substrate</text>\n    <text class=\"ldesc\" x=\"330\" y=\"275\">High-layer-count ABF and build-up substrate</text>\n    <rect x=\"790\" y=\"258.5\" width=\"152\" height=\"26\" rx=\"13\" fill=\"none\" stroke=\"#7fb069\" stroke-width=\"1.4\"></rect><text class=\"pl pl-g\" x=\"866\" y=\"277\">GATED</text>\n  </g><g class=\"lr\" style=\"animation-delay:0.53s\">\n    <rect x=\"40\" y=\"292\" width=\"902\" height=\"35\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.085\"></rect>\n    <text class=\"lnum\" x=\"56\" y=\"315.5\">05</text>\n    <text class=\"lname\" x=\"96\" y=\"315.5\">PCB</text>\n    <text class=\"ldesc\" x=\"330\" y=\"315\">HDI and high-layer-count boards, impedance control</text>\n    <rect x=\"790\" y=\"298.5\" width=\"152\" height=\"26\" rx=\"13\" fill=\"#7fb069\"></rect><text class=\"pl pl-o\" x=\"866\" y=\"317\">OPEN</text>\n  </g><g class=\"lr\" style=\"animation-delay:0.46s\">\n    <rect x=\"40\" y=\"332\" width=\"902\" height=\"35\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.055\"></rect>\n    <text class=\"lnum\" x=\"56\" y=\"355.5\">06</text>\n    <text class=\"lname\" x=\"96\" y=\"355.5\">Passives &amp; interconnect</text>\n    <text class=\"ldesc\" x=\"330\" y=\"355\">MLCC, inductors, high-speed connectors, cable</text>\n    <rect x=\"790\" y=\"338.5\" width=\"152\" height=\"26\" rx=\"13\" fill=\"#7fb069\"></rect><text class=\"pl pl-o\" x=\"866\" y=\"357\">OPEN</text>\n  </g><g class=\"lr\" style=\"animation-delay:0.39s\">\n    <rect x=\"40\" y=\"372\" width=\"902\" height=\"35\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.085\"></rect>\n    <text class=\"lnum\" x=\"56\" y=\"395.5\">07</text>\n    <text class=\"lname\" x=\"96\" y=\"395.5\">Power delivery</text>\n    <text class=\"ldesc\" x=\"330\" y=\"395\">PSU, busbar, VRM and rack-level distribution</text>\n    <rect x=\"790\" y=\"378.5\" width=\"152\" height=\"26\" rx=\"13\" fill=\"#7fb069\"></rect><text class=\"pl pl-o\" x=\"866\" y=\"397\">OPEN</text>\n  </g><g class=\"lr\" style=\"animation-delay:0.32s\">\n    <rect x=\"40\" y=\"412\" width=\"902\" height=\"35\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.055\"></rect>\n    <text class=\"lnum\" x=\"56\" y=\"435.5\">08</text>\n    <text class=\"lname\" x=\"96\" y=\"435.5\">Thermal</text>\n    <text class=\"ldesc\" x=\"330\" y=\"435\">Cold plate, vapour chamber, heat sink, liquid loop</text>\n    <rect x=\"790\" y=\"418.5\" width=\"152\" height=\"26\" rx=\"13\" fill=\"#7fb069\"></rect><text class=\"pl pl-o\" x=\"866\" y=\"437\">OPEN</text>\n  </g><g class=\"lr\" style=\"animation-delay:0.25s\">\n    <rect x=\"40\" y=\"452\" width=\"902\" height=\"35\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.085\"></rect>\n    <text class=\"lnum\" x=\"56\" y=\"475.5\">09</text>\n    <text class=\"lname\" x=\"96\" y=\"475.5\">SMT &amp; box build</text>\n    <text class=\"ldesc\" x=\"330\" y=\"475\">Assembly, burn-in, functional test, first article</text>\n    <rect x=\"790\" y=\"458.5\" width=\"152\" height=\"26\" rx=\"13\" fill=\"#7fb069\"></rect><text class=\"pl pl-o\" x=\"866\" y=\"477\">OPEN</text>\n  </g><g class=\"lr\" style=\"animation-delay:0.18s\">\n    <rect x=\"40\" y=\"492\" width=\"902\" height=\"35\" rx=\"3\" fill=\"#ffffff\" opacity=\"0.055\"></rect>\n    <text class=\"lnum\" x=\"56\" y=\"515.5\">10</text>\n    <text class=\"lname\" x=\"96\" y=\"515.5\">ODM &amp; system integration</text>\n    <text class=\"ldesc\" x=\"330\" y=\"515\">Rack integration, enclosure, logistics, RMA</text>\n    <rect x=\"790\" y=\"498.5\" width=\"152\" height=\"26\" rx=\"13\" fill=\"none\" stroke=\"#7fb069\" stroke-width=\"1.4\"></rect><text class=\"pl pl-g\" x=\"866\" y=\"517\">GATED</text>\n  </g>";
+  return `<style>
+  .ttl{font-family:'Source Serif 4',Georgia,serif;font-size:25px;font-weight:600;fill:#fff}
+  .sub{font-size:15.5px;fill:${P.pale}}
+  .lr{opacity:1}
+  .lnum{font-family:'IBM Plex Mono',monospace;font-size:13px;fill:${P.pale};opacity:.85}
+  .lname{font-size:15.5px;font-weight:600;fill:#fff}
+  .ldesc{font-size:13.5px;fill:${P.pale}}
+  .pl{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;text-anchor:middle}
+  .pl-o{fill:${P.deep};font-weight:600}
+  .pl-g{fill:${P.pale}}
+  .pl-a{fill:${P.pale};opacity:.8}
+  .axis{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;fill:${P.pale};opacity:.75}
+  .lgd{font-size:14px;fill:${P.pale}}
+  .note{font-size:14px;fill:${P.pale}}
+  @media (prefers-reduced-motion:no-preference){
+    :host(:not(.in)) .lr{opacity:0}
+    :host(.reveal) .lr{opacity:1}
+    :host(.in) .lr{animation:lrin .55s cubic-bezier(.2,.7,.3,1) both}
+  }
+  @keyframes lrin{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:translateX(0)}}
+  </style>
+  <svg viewBox="0 0 1000 640" role="img" aria-label="Diagram: Taiwan's hardware stack in ten layers from wafer foundry to system integration, each marked open, gated or allocated for a first-run foreign order">
+    <rect x="0" y="0" width="1000" height="640" rx="8" fill="${P.deep}"></rect>
+    <text class="ttl" x="40" y="52">Taiwan by layer.</text>
+    <text class="sub" x="40" y="80">Ten layers between a schematic and a shipped rack. We hold relationships at every one.</text>
+    <text class="sub" x="40" y="102">The variable is not access. It is whether the layer has capacity to sell you.</text>
+    <text class="axis" x="40" y="124">LAYER</text>
+    <text class="axis" x="330" y="124">WHAT SITS THERE</text>
+    <text class="axis" x="866" y="124" text-anchor="middle">FIRST-RUN ACCESS</text>
+    ${rows}
+    <g transform="translate(40,568)">
+      <rect x="0" y="-11" width="16" height="16" rx="8" fill="${P.jade}"></rect><text class="lgd" x="24" y="2">Open — quotes at your volume</text>
+      <rect x="250" y="-11" width="16" height="16" rx="8" fill="none" stroke="${P.jade}" stroke-width="1.4"></rect><text class="lgd" x="274" y="2">Gated — moves on introduction</text>
+      <rect x="516" y="-11" width="16" height="16" rx="8" fill="none" stroke="${P.pale}" stroke-width="1.3" stroke-dasharray="4 3" opacity=".62"></rect><text class="lgd" x="540" y="2">Allocated — capacity is spoken for</text>
+    </g>
+    <text class="note" x="40" y="608">Access describes the position a first-time foreign customer meets on a low-volume run, not the layer's technical</text>
+    <text class="note" x="40" y="626">capability. Allocated layers are reachable, but on a schedule set by someone else's order book.</text>
+  </svg>`;
+});
+
+/* ─────────────────────────────────────────────────────────────
    4. FUNNEL — scouting pipeline, universe → client-rated → visits.
    ───────────────────────────────────────────────────────────── */
 def('dg-funnel',el=>{

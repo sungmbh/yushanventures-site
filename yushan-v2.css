@@ -309,7 +309,7 @@ section{padding:84px 0}
 .cs-top{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:40px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
 .cs-top img{max-height:34px;max-width:158px;object-fit:contain}
 .cs-wm{font-family:var(--serif);font-weight:600;font-size:23px;color:var(--ink);letter-spacing:-.01em}
-.cs-badge{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--green-mid);background:var(--green-tint);border-radius:100px;padding:5px 13px;white-space:nowrap;flex:none}
+.cs-badge{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--green-mid);background:var(--green-tint);border-radius:100px;padding:5px 13px;flex:0 1 auto;min-width:0;text-align:right;text-wrap:balance}
 .cs-region{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .cs-card h3{font-size:20px;margin:0}
 .cs-card p{font-size:15.5px;color:var(--muted);line-height:1.6}
@@ -555,7 +555,6 @@ section[id],header[id]{scroll-margin-top:132px}
    viewport. Let the row wrap and the badge break instead. */
 @media (max-width:620px){
 .cs-top{flex-wrap:wrap;gap:10px;align-items:flex-start}
-.cs-badge{white-space:normal}
 .cs-wm{font-size:20px}
 .cs-pair{flex-wrap:wrap}
 }

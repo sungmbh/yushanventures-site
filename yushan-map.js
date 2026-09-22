@@ -9,7 +9,7 @@
     "China": {city:[121.47,31.23], items:["Audi — technology scouting","Coca-Cola — China scouting","SenseTime — scouted for Audi → IPO","Lite-On — radar & lidar","Siemens China — innovation program","Wikitude — social-media management (→ Qualcomm)"]},
     "Israel": {city:[34.78,32.08], items:["Audi — technology scouting","Lite-On — radar & lidar"]},
     "Thailand": {city:[100.5,13.75], items:["Siam Cement Group — high-temp kiln sensors","Chanwanich — biometric scouting (face & fingerprint)","Startup Thailand workshop — Bangkok","GSMA China Innovation Roadshow"]},
-    "Malaysia": {city:[101.69,3.14], items:["IBM — Southeast Asia scouting","GSMA China Innovation Roadshow"]},
+    "Malaysia": {city:[101.69,3.14], items:["MDEC &amp; Cradle Fund — VC partner, Smart Investment Facilitation 2015","Investor Readiness Workshop, Kuala Lumpur — 20 startups","Coaching mandate — GridMarkets, Off Peak Hub, Reneon","IBM — Southeast Asia scouting","GSMA China Innovation Roadshow"]},
     "India": {city:[77.21,28.61], items:["IAV (VW Group) — Best-Cost-Country scouting RFQ","Uno Minda × AcBel — strategic license agreement"]},
     "Peru": {city:[-77.04,-12.05], items:["APEC O2O Summit — Lima"]},
     "Philippines": {city:[120.98,14.6], items:["APEC O2O accelerator program"]},

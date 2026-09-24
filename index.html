@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yushan Ventures | Deep-tech strategy and Taiwan supply chain, since 2011</title>
 <meta name="description" content="Yushan Ventures answers make-or-buy-or-partner questions for industrial companies — in compound semiconductors, AI and robotics, optics and sensing. Clients include Audi, Continental, ABB and ZEISS, across 15 countries.">
-<link rel="stylesheet" href="yushan-v2.css">
+<link rel="stylesheet" href="yushan-v2.css?v=260923b">
 <script src="assets/d3-array.min.js"></script>
 <script src="assets/d3-selection.min.js"></script>
 <script src="assets/d3-geo.min.js"></script>
@@ -143,7 +143,11 @@
     </div>
     <figure class="fp-photo">
       <img src="assets/team-nasa.jpg" alt="The Yushan team on site at NASA" loading="lazy">
-      <figcaption><span class="fp-k">On the ground</span><b>15 countries across Asia, Europe, the Americas and Israel.</b><span>Here: on site at NASA, USA.</span></figcaption>
+      <figcaption>
+        <div class="fp-k">On the ground</div>
+        <div class="fp-t">15 countries across Asia, Europe, the Americas and Israel.</div>
+        <div class="fp-s">Here: on site at NASA, USA.</div>
+      </figcaption>
     </figure>
   </div>
 </section>
@@ -583,8 +587,8 @@
   </div>
 </footer>
 
-<script src="yushan-map.js"></script>
-<script src="yushan-hero.js"></script>
+<script src="yushan-map.js?v=260923b"></script>
+<script src="yushan-hero.js?v=260923b"></script>
 <script>
 (function(){var t=document.getElementById('talks'),b=document.getElementById('talks-toggle');if(t&&b)b.addEventListener('click',function(){var col=t.classList.toggle('collapsed');b.textContent=col?'Show all 27 engagements':'Show fewer';});})();
 (function(){var rail=document.querySelector('.anchor-rail');if(!rail)return;var links=[].slice.call(rail.querySelectorAll('a'));var tg=links.map(function(a){return document.querySelector(a.getAttribute('href'));});function upd(){var y=window.scrollY+170,cur=-1;tg.forEach(function(t,i){if(t&&t.getBoundingClientRect().top+window.scrollY<=y)cur=i;});links.forEach(function(a,i){a.classList.toggle('here',i===cur);});}window.addEventListener('scroll',upd,{passive:true});upd();})();

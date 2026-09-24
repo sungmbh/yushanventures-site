@@ -700,3 +700,4 @@ footer p a,.site-footer p a{display:inline-block;padding:9px 0}
 @media (max-width:1000px){.sc-layers{grid-template-columns:repeat(2,minmax(0,1fr))}.sc-layer:nth-child(3){border-left:0}.sc-layer:nth-child(n+3){border-top:1px solid var(--rule)}.sc-proof{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){.sc-layers{grid-template-columns:1fr}.sc-layer{border-left:0;border-top:1px solid var(--rule)}.sc-layer:first-child{border-top:0}.sc-proof{grid-template-columns:1fr}.sc-p{flex-direction:row;align-items:center}.sc-p img{flex:none;width:92px;height:28px;max-width:none}.sc-p .sc-wm{flex:none;width:92px;font-size:13px;line-height:1.2}.sc-cta .hx-btn{width:100%;justify-content:center}}
 .sc-cta .hx-btn.solid{background:var(--green);color:#fff!important}.sc-cta .hx-btn.solid:hover{background:var(--green-deep)}
+.tr-work{color:var(--green-mid)}

@@ -10,6 +10,8 @@ Public website for Yushan Ventures. Its work covers industrial technology, inclu
 - [Case studies](https://yushanventures.com/case-studies.html): Published project examples.
 - [Taiwan supply chain](https://yushanventures.com/taiwan-supply-chain.html): Hardware sourcing and build support.
 
+- [Corporate startup and technology scouting](https://yushanventures.com/taiwan-technology-scouting.html): Search briefs, screened shortlists, evidence review and pilot handoff for corporate innovation teams.
+
 ## Contact
 - Email: vh@yushanventures.com
 - Phone: +1 415 285 6800

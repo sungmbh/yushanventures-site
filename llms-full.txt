@@ -1,0 +1,94 @@
+# Yushan Ventures: public reference
+
+Updated: 2026-10-05
+Website: https://yushanventures.com/
+
+## Firm and contact
+
+Yushan Ventures is an advisory and technology-scouting firm connecting foreign hardware teams and corporate innovation teams with Taiwan technology and supply-chain partners. The website positions its work around physical AI, hardware, semiconductors, robotics, optics and sensing, and advanced materials. Yushan is not a fund.
+
+Volker Heistermann is Managing Director. The website lists a core team and specialist partners and advisors working across Taiwan, the United States, Germany, Japan, Singapore and Malaysia. A listed person is not a promise of availability for a particular engagement.
+
+Email: vh@yushanventures.com
+Phone: +1 415 285 6800
+Company profile: https://www.linkedin.com/company/yushan-ventures-inc/
+Volker's profile: https://www.linkedin.com/in/volkerheistermann/
+
+## Taiwan supply chain and build
+
+For foreign hardware and physical-AI startups with a product roadmap, prototype or bill of materials. Work can include:
+
+- Review of the bill of materials against Taiwan supplier capability.
+- Foundry and design-house options, node choices and supply-chain questions.
+- Supplier qualification and a shortlist of potential partners.
+- Preparation of specific quoting inquiries, introductions and comparison of options.
+- Communication support through first article and ramp.
+
+Useful first-inquiry inputs: product and application, supplier layer, prototype quantity, expected first order and later volume, timing, budget range, quality requirements and an engineering contact. Agree a confidential sharing process before sending design files.
+
+Yushan does not promise foundry allocation, supplier availability, minimum order, lead time, manufacturing price or production outcomes. The customer's engineers own design and technical acceptance. Manufacturers own quotes, production and quality commitments.
+
+Source: https://yushanventures.com/taiwan-supply-chain.html
+
+## Technology strategy and scouting
+
+For corporate innovation and engineering teams seeking a technology or company that can address an application or capability gap. This differs from sourcing a supplier for a defined part.
+
+Work can include search briefs, value-chain mapping, technology roadmaps, partner assessment, evidence checks, screened company shortlists and technical-review or pilot-discussion handoffs. Taiwan can be the search focus; other markets depend on the agreed brief.
+
+The process is to agree the question and exclusions, search and screen, present sources and open questions, and prepare discussions with selected candidates. The client's business and engineering teams decide which candidates deserve further work. A pilot is a separate decision. Technical testing, legal review and procurement checks remain with the responsible specialists.
+
+Published technology areas: semiconductors and displays, edge AI and robotics, optics and sensing, microLED and advanced materials. microLED is included as a technology capability, not a dedicated service page.
+
+Source: https://yushanventures.com/taiwan-technology-scouting.html
+Service overview: https://yushanventures.com/services.html
+
+## Venture and investment advisory
+
+Deal sourcing, technical and commercial due diligence, strategic-investor introductions, venture-partner engagements, portfolio support and cross-border market entry. The website also describes fundraising preparation and investor introductions for hardware teams. Funding is never promised. Yushan does not present a shortlist as an investment offer.
+
+Historical venture-partner work includes the Trans Pacific Technology Fund, fully realized after seven years, and Foundamental. These are historical roles with other funds, not a claim that Yushan operates its own fund.
+
+Source: https://yushanventures.com/services.html
+
+## Startup business development and ecosystems
+
+Cross-border and US market-entry strategy, warm customer introductions, sales-narrative coaching, fundraising preparation, accelerator design and corporate market-readiness workshops. Scope and deliverables are agreed for each engagement.
+
+Source: https://yushanventures.com/services.html
+
+## Selected published case summaries
+
+These are summaries of published historical work, not current client offers or promises of access, investment or results for another company.
+
+### Rebellions: Taiwan foundry and design-house strategy
+
+For the Korean AI-chip company, the work covered dual-foundry questions, node selection against the product roadmap and capacity constraints. Delivered in 2023-2024 through Mosaic Venture Lab.
+
+### ABB Robotics: Japan scouting
+
+In 2017-2018, Yushan screened AI and robotics companies in Japan and prepared technical dossiers on fifteen shortlisted companies. ABB's engineers graded the candidates. This Japan engagement is not described as a Taiwan project.
+
+### Lixel: roadshow and proof of concept
+
+Lixel develops glasses-free 3D light-field displays in Taiwan. Yushan ran a roadshow that led to a Volkswagen proof of concept.
+
+### Elephantech: introductions to German carmakers
+
+Yushan introduced the Japanese printed-circuit-board company to Porsche procurement, Audi, BMW and other German carmakers.
+
+### ZEISS Microoptics: strategy and automotive readiness
+
+Two workshops at the Jena site in 2024 covered innovation and product strategy, then production readiness for a Korean Tier-1 programme. Workshops and reports were in German.
+
+Case source: https://yushanventures.com/case-studies.html
+
+## Public pages
+
+- https://yushanventures.com/
+- https://yushanventures.com/services.html
+- https://yushanventures.com/case-studies.html
+- https://yushanventures.com/taiwan-supply-chain.html
+- https://yushanventures.com/taiwan-technology-scouting.html
+
+Services, availability and deliverables are agreed directly for each engagement. Published case studies and team descriptions should be read with their dates and limits; they are not commitments on behalf of named clients or suppliers.

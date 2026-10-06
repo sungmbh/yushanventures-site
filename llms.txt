@@ -12,6 +12,9 @@ Public website for Yushan Ventures. Its work covers industrial technology, inclu
 
 - [Corporate startup and technology scouting](https://yushanventures.com/taiwan-technology-scouting.html): Search briefs, screened shortlists, evidence review and pilot handoff for corporate innovation teams.
 
+## Full reference
+- [Full public reference](https://yushanventures.com/llms-full.txt): Services, technology areas, published case summaries and engagement limits in one plain-text document.
+
 ## Contact
 - Email: vh@yushanventures.com
 - Phone: +1 415 285 6800

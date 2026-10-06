@@ -1,0 +1,4 @@
+Contact: mailto:vh@yushanventures.com
+Expires: 2027-10-01T00:00:00Z
+Preferred-Languages: en
+Canonical: https://yushanventures.com/.well-known/security.txt

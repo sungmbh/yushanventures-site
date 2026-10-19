@@ -462,14 +462,7 @@ a.news-card:hover .news-arrow{color:var(--green)}
 .cs-media{position:relative;align-self:stretch;min-height:240px;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,.16);background:rgba(0,0,0,.2)}
 .cs-media image-slot{position:absolute;inset:0}
 @media(max-width:720px){.cs-card.cs-has-media{grid-template-columns:1fr}.cs-media{min-height:200px}}
-/* ADVISORY */
-.advisory{margin-top:44px;padding-top:32px;border-top:1px solid var(--rule)}
-.advisory-note{font-size:15px;color:var(--muted);max-width:660px;margin:12px 0 22px;line-height:1.6}
-.advisory-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:820px}
-.adv-org{background:var(--white);border:1px solid var(--rule);border-radius:9px;padding:18px 20px;display:flex;flex-direction:column;gap:5px}
-.adv-name{font-family:var(--serif);font-weight:600;font-size:19px;color:var(--ink);letter-spacing:-.01em}
-.adv-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--green-mid)}
-@media(max-width:620px){.advisory-row{grid-template-columns:1fr}}
+@media(max-width:620px){}
 @media (max-width:940px){.clip-gallery{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:560px){.clip-gallery{grid-template-columns:1fr}.clip img{height:340px}}
 /* RESPONSIVE — added components */
@@ -723,3 +716,8 @@ footer p a,.site-footer p a{display:inline-block;padding:9px 0}
 @media(max-width:820px){.fx{padding:60px 0}.fx-grid,.fx-steps{grid-template-columns:1fr}.fx-card.lead{display:flex;padding:24px 22px}.fx-card.lead .fx-logo{border-right:0;border-bottom:1px solid var(--rule);min-height:0;height:64px;padding:0 0 18px}.fx-card.lead .fx-logo img{max-height:54px}.fx-step{border-left:0;border-top:1px solid rgba(255,255,255,.22)}.fx-step:first-child{border-top:0}.fx-card{padding:24px 22px}}
 .fx-card.lead h3{font-size:30px}.fx-card.lead p{font-size:17px}
 @media(max-width:820px){.fx-card.lead .fx-logo{justify-content:flex-start}.fx-card.lead h3{font-size:26px}}
+
+/* Press clippings — five-up */
+.clip-gallery.five{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media (max-width:1080px){.clip-gallery.five{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.clip-gallery.five{grid-template-columns:1fr}}
